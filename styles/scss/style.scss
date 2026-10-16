@@ -1,0 +1,26 @@
+@use 'reset';
+@use 'mixins';
+@use 'variables';
+
+.container {
+  height: 100vh;
+  padding: 56px 30px;
+}
+
+.header {
+  text-align: center;
+  color: variables.$color-grey500;
+
+  &__title {
+    @include mixins.preset-2;
+    
+
+    b {
+      font-weight: 600;
+    }
+  }
+
+  &__description {
+    @include mixins.preset-4;
+  }
+}
