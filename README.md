@@ -1,5 +1,7 @@
 # Four-card-feature-section
 
+A responsive four-card feature section built as part of a Frontend Mentor challenge.
+
 ![Page preview](./assets/screenshot.png)
 
 - Live: [GitHub Pages]()
