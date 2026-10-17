@@ -4,8 +4,8 @@ A responsive four-card feature section built as part of a Frontend Mentor challe
 
 ![Page preview](./assets/screenshot.png)
 
-- Live: [GitHub Pages]()
-- Code: [GitHub]()
+- Live: [GitHub Pages](https://kirilenko-a.github.io/Four-card-feature-section/)
+- Code: [GitHub](https://github.com/kirilenko-a)
 
 ## Built with
 
