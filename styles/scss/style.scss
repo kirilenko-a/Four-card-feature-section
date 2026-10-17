@@ -3,18 +3,23 @@
 @use 'variables';
 
 .container {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
   padding: 56px 30px;
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   text-align: center;
   color: variables.$color-grey500;
 
   &__title {
     @include mixins.preset-2;
     
-
     b {
       font-weight: 600;
     }
@@ -22,5 +27,77 @@
 
   &__description {
     @include mixins.preset-4;
+  }
+}
+
+.cards {
+  display: grid;
+  gap: 32px;
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 314px;
+    padding: 32px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: variables.$color-white;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__title {
+    @include mixins.preset-3;
+    color: variables.$color-grey500;
+  }
+
+  &__description {
+    @include mixins.preset-5;
+    color: variables.$color-grey400;
+  }
+
+  &__icon {
+    width: 64px;
+    height: 64px;
+    align-self: flex-end;
+  }
+
+  &__supervisor {
+    &::before {
+      background-color: variables.$color-cyan;
+    }
+  }
+
+  &__teambuilder {
+    &::before {
+      background-color: variables.$color-red;
+    }
+  }
+
+  &__karma {
+    &::before {
+      background-color: variables.$color-orange;
+    }
+  }
+
+  &__calculator {
+    &::before {
+      background-color: variables.$color-blue;
+    }
   }
 }
