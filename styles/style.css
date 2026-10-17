@@ -75,11 +75,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  max-width: 314px;
+  max-width: 350px;
   padding: 32px;
   border-radius: 8px;
   overflow: hidden;
   background-color: #FFFFFF;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
 }
 .cards .card::before {
   content: "";
