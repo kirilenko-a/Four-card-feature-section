@@ -13,5 +13,7 @@
 - Flexbox
 - Media queries
 
+## Author
+
 - [GitHub](https://github.com/kirilenko-a)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/kirilenko-a)
